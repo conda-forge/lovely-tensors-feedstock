@@ -21,12 +21,7 @@ requirements:
   run:
     - python >=3.7
     - pytorch
-    - pillow
-    - fastcore
-    - numpy
-    - ipython
     - lovely-numpy >=0.2.8
-    - matplotlib-base
 
 test:
   imports:
