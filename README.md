@@ -152,4 +152,5 @@ Feedstock Maintainers
 =====================
 
 * [@sugatoray](https://github.com/sugatoray/)
+* [@xl0](https://github.com/xl0/)
 
