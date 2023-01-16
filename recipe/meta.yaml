@@ -1,5 +1,5 @@
 {% set name = "lovely-tensors" %}
-{% set version = "0.1.7" %}
+{% set version = "0.1.14" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lovely-tensors-{{ version }}.tar.gz
-  sha256: 42c5e4d6473e8db0647907e5c183f75ad5a6229f9362dbf55f235bc41fe20def
+  sha256: db8428876774fcc6e64f7224eef4621568c7e2e95e4117ba553b9b017f6184f6
 
 build:
   noarch: python
-  number: 0
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
@@ -21,11 +21,7 @@ requirements:
   run:
     - python >=3.7
     - pytorch
-    - pillow
-    - fastcore
-    - numpy
-    - ipython
-    - matplotlib-base
+    - lovely-numpy >=0.2.8
 
 test:
   imports:
@@ -50,3 +46,4 @@ about:
 extra:
   recipe-maintainers:
     - sugatoray
+    - xl0
