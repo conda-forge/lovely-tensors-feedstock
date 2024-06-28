@@ -1,13 +1,13 @@
 {% set name = "lovely-tensors" %}
-{% set version = "0.1.15" %}
+{% set version = "0.1.16" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lovely-tensors-{{ version }}.tar.gz
-  sha256: eb25efdf79f338752bdc427bea188a450bf2664e3912a3d7f932af8039e4f06b
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: faf5d1c675d517e4e736131feeb28efe9d7a2125dbe5e6829675d590524ebc59
 
 build:
   noarch: python
@@ -36,7 +36,7 @@ about:
   summary: ❤️ Lovely Tensors
   license: MIT
   license_file: LICENSE
-  description: |
+  description: |2
 
     PyPI: [https://pypi.org/project/lovely-tensors/](https://pypi.org/project/lovely-tensors/)
 
