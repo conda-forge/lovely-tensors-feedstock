@@ -1,5 +1,5 @@
 {% set name = "lovely-tensors" %}
-{% set version = "0.1.16" %}
+{% set version = "0.1.17" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: faf5d1c675d517e4e736131feeb28efe9d7a2125dbe5e6829675d590524ebc59
+  sha256: 9de313d8353240c6d69e2047e2859978201cb6ebbb9c4e63b4e99a1c706fc4b4
 
 build:
   noarch: python
